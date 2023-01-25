@@ -27,7 +27,7 @@ const reducer = (state, action) => {
     case 'ADD_COLUMN':
       return { ...state, columns: [...state.columns, { ...action.payload, id: shortid() }] }
     case 'ADD_CARD':
-      return { ...state, cards: [...state.cards, { ...action.payload, id: shortid() }] }
+      return { ...state, cards: [...state.cards, { ...action.payload, id: shortid(), isFavorite: false }] }
     case 'SEARCH':
       return { ...state, searchText: action.payload }
     case 'ADD_LIST':
