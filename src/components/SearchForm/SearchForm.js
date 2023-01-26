@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 /* import { useSelector } from 'react-redux';
 import { getCurrentSearch } from '../../redux/store'; */
 import { useState, useEffect } from 'react';
-import { search } from '../../redux/store';
+import { search } from '../../redux/searchTextReducer';
 
 const SearchForm = () => {
   const dispatch = useDispatch();
